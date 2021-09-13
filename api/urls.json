@@ -1,0 +1,20 @@
+{
+    "urls": [
+        {
+            "name": "Google",
+            "url": "http://google.com"
+        },
+        {
+            "name": "Youtube",
+            "url": "http://youtube.com"
+        },
+        {
+            "name": "Reddit",
+            "url": "http://reddit.com"
+        },
+        {
+            "name": "Twitter",
+            "url": "http://twitter.com"
+        }
+    ]
+}
