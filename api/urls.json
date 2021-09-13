@@ -13,8 +13,8 @@
             "url": "http://reddit.com"
         },
         {
-            "name": "Twitter",
-            "url": "http://twitter.com"
+            "name": "MyGains",
+            "url": "http://gains-platform.herokuapp.com"
         }
     ]
 }

@@ -20,17 +20,23 @@ function addElement({ name, url }) {
   a.target = "_blank";
 
   trash.innerHTML = "x";
-  trash.onclick = () => removeElement(trash);
+  trash.onclick = () => {
+    removeElement(trash);
+
+    delAPI({ name, url });
+  };
 
   li.append(a);
   li.append(trash);
   ul.append(li);
 }
+function delAPI({ name, url }) {
+  fetch(`http://localhost:3000/?name=${name}&url=${url}&del=1`);
+}
 
 function removeElement(element) {
   if (confirm("Tem certeza que quer deletar?"));
-  const EPN = element.parentNode;
-  EPN.remove();
+  element.parentNode.remove();
 }
 
 form.addEventListener("submit", (event) => {
